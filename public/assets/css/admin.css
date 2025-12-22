@@ -1,0 +1,158 @@
+/* ============================================
+   ADMIN STYLES
+   ============================================ */
+
+.admin-navbar {
+    background-color: #1a1a1a;
+}
+
+.admin-navbar .nav-link.active {
+    background-color: #3498db;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+}
+
+.admin-container h1 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.admin-container h2 {
+    color: #34495e;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Stats */
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    border-left: 4px solid #3498db;
+}
+
+.stat-card h3 {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Section admin */
+.admin-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+/* Table admin */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.admin-table th {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+.admin-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ecf0f1;
+    color: #555;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.role-badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.role-badge.user {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.role-badge.admin {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Formulaire admin */
+.admin-form {
+    margin-top: 1rem;
+}
+
+.admin-actions {
+    margin-bottom: 1.5rem;
+}
+
+.admin-actions .btn {
+    margin-right: 0.5rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form-actions .btn {
+    flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .admin-table {
+        font-size: 0.9rem;
+    }
+    
+    .admin-table th,
+    .admin-table td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .form-actions .btn {
+        flex: none;
+    }
+}
